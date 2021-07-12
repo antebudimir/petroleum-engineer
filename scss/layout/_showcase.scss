@@ -1,0 +1,112 @@
+// Showcase
+.showcase-wrapper {
+	@include respond-to-width(1024px) {
+		z-index: 2;
+		border-radius: $border-radius-primary;
+		box-shadow: inset 0 0 10px 10px rgba(0, 0, 0, 0.5);
+		width: 30%;
+		padding: 1rem 1rem 0 1rem;
+		background: $secondary-color;
+	}
+	@include respond-to-width(1400px) {
+		width: 25%;
+	}
+}
+
+#showcase {
+	clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 50% 100%, 0 80%);
+	height: 41vh;
+	background: url(../img/bg.jpg) no-repeat center center/cover;
+
+	@include respond-to-height(600px) {
+		height: 45vh;
+	}
+	@include respond-to-height(700px) {
+		height: 50vh;
+	}
+	@include respond-to-height(800px) {
+		height: 57vh;
+	}
+	@include respond-to-width(1024px) {
+		border-radius: $border-radius-primary;
+		width: 100%;
+		height: 40vh;
+	}
+}
+
+.frame {
+	position: relative; // in combo with margin
+	border: 0.2rem solid $primary-color;
+	border-radius: 50%;
+	box-shadow: $box-shadow-1;
+	width: 9rem;
+	height: 9rem;
+	margin: -6rem auto 0;
+	background: url(../img/profile.jpg) no-repeat center center/cover;
+
+	&:hover,
+	&:focus {
+		transform: scale(2);
+		transition: transform 1000ms ease-in;
+	}
+}
+
+.intro {
+	margin-top: 1rem;
+	text-align: center;
+}
+
+.intro h1 {
+	animation: name 2s ease;
+}
+
+.profile-name {
+	margin: 0;
+	font-size: 2rem;
+	text-shadow: $text-shadow-1;
+	animation: name 2s ease;
+}
+
+.engineer {
+	margin: 0;
+	color: $tertiary-color;
+	animation: rightSlide 2s ease;
+}
+
+// Social icons
+.icons {
+	@include flex-alignment(space-around, initial);
+	margin: 1rem 4.8rem 2rem;
+
+	@include respond-to-width(1024px) {
+		margin: 1rem 1rem 2rem;
+	}
+}
+
+.icons .fa {
+	font-size: 2rem;
+
+	&:hover {
+		color: $tertiary-color;
+	}
+}
+
+.links {
+	border-top: $border-line-primary;
+	border-bottom: $border-line-primary;
+	@include flex-alignment(space-evenly, initial);
+	padding: 1rem 0;
+}
+
+#link-1 {
+	animation: glow 1s ease-in-out infinite alternate;
+}
+
+// vertical line separating the links
+.vl {
+	border-right: $border-line-primary;
+}
+
+#link-2 {
+	animation: glow 2s ease-in-out infinite alternate;
+}

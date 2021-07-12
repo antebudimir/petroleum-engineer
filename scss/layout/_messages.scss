@@ -1,0 +1,8 @@
+// Thank you page, Error page
+#thanks-message,
+#error-message {
+	@include flex-column-center;
+	min-height: 100%;
+	padding: 1rem 0;
+	text-align: center;
+}

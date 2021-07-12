@@ -1,0 +1,39 @@
+// @font-faces:
+@font-face {
+	font-family: 'Poppins Regular';
+	src: url('../fonts/Poppins-Regular.woff');
+}
+
+// All fonts declared:
+html {
+	font-family: 'Poppins Regular', sans-serif;
+}
+
+input,
+select,
+textarea,
+button {
+	color: inherit;
+	font-family: inherit;
+	font-size: inherit;
+}
+
+h2 {
+	margin: -2.3rem 0 2rem;
+	font-size: 1.3rem;
+}
+
+h3 {
+	margin: 1rem 0;
+	font-size: 1rem;
+}
+
+p {
+	color: $text-secondary-color;
+	line-height: 1.7;
+}
+
+li {
+	color: $text-primary-color;
+	font-size: 0.9rem;
+}

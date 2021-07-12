@@ -1,0 +1,23 @@
+// Language
+.language {
+	color: $text-primary-color;
+	font-size: 0.9rem;
+}
+
+.dotts {
+	@include flex-alignment(space-between, initial);
+}
+
+.dott {
+	border-radius: 50%;
+	display: inline-block;
+	width: 0.9rem;
+	height: 0.9rem;
+	margin-bottom: 1rem;
+	padding: 0.5rem;
+	background: $tertiary-color;
+}
+
+.empty {
+	background: $text-secondary-color;
+}

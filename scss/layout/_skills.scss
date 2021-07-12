@@ -1,0 +1,33 @@
+// Skills
+#skills {
+	@include respond-to-width(1024px) {
+		display: none;
+	}
+}
+
+.fa-battery-full {
+	@include icon-style;
+}
+
+.skill {
+	color: $text-primary-color;
+	font-size: 0.9rem;
+}
+
+.bar {
+	margin-bottom: 1.5rem;
+	background: $text-secondary-color;
+}
+
+.fill {
+	padding: 0.2rem 0;
+	background: $tertiary-color;
+}
+
+.fill-1 {
+	width: $fill-1;
+}
+
+.fill-2 {
+	width: $fill-2;
+}

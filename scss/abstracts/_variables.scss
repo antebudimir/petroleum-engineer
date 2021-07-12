@@ -1,0 +1,26 @@
+// Colors
+$primary-color: rgb(49, 49, 58);
+$secondary-color: rgb(40, 40, 47);
+$tertiary-color: rgb(120, 204, 109);
+$quaternary-color: rgba(120, 204, 109, 0.239);
+$tertiary-color-brighter: rgb(120, 250, 109);
+$text-primary-color: rgba(255, 255, 255, 0.851);
+$text-secondary-color: rgba(255, 255, 255, 0.55);
+$border-color: rgba(255, 255, 255, 0.048);
+
+// Borders
+$border-radius-primary: 0.2rem;
+
+$border-line-primary: 0.1rem solid $border-color;
+$border-line-secondary: 0.1rem solid $tertiary-color;
+$border-line-tertiary: 0.1rem solid $text-secondary-color;
+
+$border-color: 1rem solid $quaternary-color;
+
+// Shadows
+$box-shadow-1: rgba(120, 204, 109, 0.239) -0.7rem 0.4rem;
+$text-shadow-1: 0 0 0.2rem rgb(173, 150, 150);
+
+// Fills
+$fill-1: 90%;
+$fill-2: 100%;
