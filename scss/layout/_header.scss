@@ -34,7 +34,7 @@ header {
 	&:nth-of-type(5) {
 		display: none;
 		@include respond-to-width(1024px) {
-			display: initial;
+			display: inherit;
 		}
 	}
 
