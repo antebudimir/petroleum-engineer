@@ -11,6 +11,14 @@ html {
 	background: $primary-color;
 	color: $text-primary-color;
 
+	@include respond-to-width(600px) {
+		font-size: 120%;
+	}
+
+	@include respond-to-width(1024px) {
+		font-size: 100%;
+	}
+
 	@include respond-to-width(1600px) {
 		font-size: 120%;
 	}
