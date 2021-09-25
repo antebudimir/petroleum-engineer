@@ -1,9 +1,4 @@
 // Header
-header {
-	@include respond-to-width(1024px) {
-	}
-}
-
 #nav {
 	z-index: 10;
 	position: sticky;
