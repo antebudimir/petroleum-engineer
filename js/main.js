@@ -58,7 +58,7 @@ if (window.innerWidth > 1023) {
 	menuLinks.forEach((link) => {
 		link.addEventListener('click', (e) => {
 			// About section
-			if (e.target == aboutLink || e.target === faIcons[1]) {
+			if (e.target === aboutLink || e.target === faIcons[1]) {
 				resume.style.display = 'none';
 				aboutSection.style.display = 'block';
 				setTimeout(() => {
